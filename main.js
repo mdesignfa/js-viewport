@@ -2,11 +2,10 @@ function mdz_isdom_in_viewport(el, callback = '') {
 
 
     var options = {
-        root: hex_confs.viewed_elems_root,
-        rootMargin: hex_confs.viewed_elems_rootmarg,
-        threshold: hex_confs.viewed_elems_threshold,
+        root: null,
+        rootMargin: '0px',
+        threshold: 1.0,
     };
-
 
     let observer = new IntersectionObserver((entry, observer) => {
 
